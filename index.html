@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="theme-color" content="#f4f5f6">
+		<meta name="apple-mobile-web-app-status-bar-style" content="#f4f5f6">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="author" content="http://www.d4me.com/">
+		<meta name="description" content="">
+		<title>D4ME</title>
+		<link rel="canonical" href="http://www.d4me.com/">
+		<link rel="stylesheet" href="/css/normalize.css">
+		<link rel="stylesheet" href="/css/skeleton.css">
+		<link rel="stylesheet" href="/css/app.css">
+		<link rel="icon" href="/img/logo.svg">
+	</head>
+	<body id="app">
+	<main class="wrapper">
+
+      <!--home-->
+      <div id="home">
+      <nav class="navigation main toolbar header">
+				<section class="row">
+				<a @click="sidemenu" class="three columns navigation-link">
+        <img src="/icon/menu-icon.svg"></a>
+				<a class="six   columns navigation-link" href="#show-menu">
+        <img src="/icon/logo-d4me.svg"></a>
+				<a @click="searchbar" class="three columns navigation-link">
+        <img src="/icon/search-icon.svg"></a>
+				</section>
+			</nav>
+
+			<section class="container content row" id="products">
+				<div v-for="item in products" track-by="id" class="item six columns " > 
+			        <img src="/icon/like-full-icon.svg" class="like">
+			        <a href="./remix"><img src=http://dev.d4me.com{{item.image}} class="product"></a>
+			            <a href="./product"><img src="/icon/proinfo.svg" class="info"></a>
+							<div class="text"> <div>{{ item.title }}</div><span>￥{{ item.price }}
+							</span> </div> </div>
+			
+			</section>
+
+		 	<a @click="shopcart"><section class="cart-icon"></section></a>
+
+			<nav class="navigation main toolbar footer">
+		  <a  @click="home" class="four columns navigation-link">
+      <img src="/icon/homepage-icon.svg"></a>
+      <a  @click="topic" class="four columns navigation-link">
+      <img src="/icon/article-icon.svg"></a>
+      <a @click="myprofile" class="four columns navigation-link" >
+      <img src="/icon/personal-icon.svg"></a>
+			</nav>
+      </div>
+
+  <!--tiopic-->
+    <div id="topic">
+     <nav class="navigation main toolbar header">
+       <section class="row">
+        <a @click="sidemenu" class="three columns navigation-link">
+        <img src="/icon/menu-icon.svg"></a>
+        <a class="six   columns navigation-link" href="#show-menu">
+        <img src="/icon/logo-d4me.svg"></a>
+        <a @click="searchbar" class="three columns navigation-link">
+        <img src="/icon/search-icon.svg"></a>
+        </section>
+      </nav>
+
+     <section class="topic">
+         <a href="./topicdetail">
+         <div v-for="item in articles" track-by="id" class="item twelve columns">
+         <img src=http://dev.d4me.com{{item.image}} class="theme"> 
+         <div class="text"> 
+         {{ item.title }}<img src="/icon/like-full-icon.svg" class="like">
+         <br>
+         <span>{{ item.text }}</span>
+         </div>
+         </div>
+         </a>
+      </section>
+	  <a @click="shopcart"><section class="cart-icon"></section></a>
+
+	   <nav class="navigation main toolbar footer">
+      <a  @click="home" class="four columns navigation-link">
+      <img src="/icon/homepage-icon.svg"></a>
+      <a  @click="topic" class="four columns navigation-link">
+      <img src="/icon/article-icon.svg"></a>
+      <a  @click="myprofile" class="four columns navigation-link" >
+      <img src="/icon/personal-icon.svg"></a>
+      </nav>
+   </div>
+    
+
+    <!--myprofile-->
+   <div id="myprofile">
+         <nav class="navigation main toolbar header">
+        <section class="row">
+        <a @click="sidemenu" class="three columns navigation-link">
+        <img src="/icon/menu-icon.svg"></a>
+        <a class="six   columns navigation-link" href="#show-menu">
+        <img src="/icon/logo-d4me.svg"></a>
+        </section>
+      </nav>
+      <section class="container content">
+     <div class="menutitlethumb">
+        <img src="/img/cat-head.svg">
+      </div>
+      <p class="profiled4me">DRESS FOR ME</p>
+      <p class="profiled4me2">DRESS FOR ME</p>
+      <br>
+      <div class="profilenickname">昵称</div>
+      <img src="/icon/cashvoucher.svg" class="cashvouchericon">
+      <p class="cashvouchernum">2</p>
+      <br>
+      <div class="cashvouchername" >代金券</div>
+      <br>
+      </section>
+      <hr class="hrline"/>
+      <div class="profiletab">
+          <a @click="myfavor"><div class="four columns"><p class="h7">我的收藏</p></div></a>
+          <a @click="myorders"><div class="four columns"><p class="h7">我的订单</p></div></a>
+          <a @click="myshopcart"><div class="four columns"><p class="h7">我的购物车</p></div></a>
+        </div>
+      <div id="myfavor">
+      <section class="container content row">
+        <div v-for="item in products" track-by="id" class="item six columns "> 
+        <img src="/icon/like-full-icon.svg" class="like">
+        <a href="./remix"> <img src=http://dev.d4me.com{{item.image}} class="product"></a>
+        <a href="product"><img src="/icon/proinfo.svg" class="info"></a>
+        <div class="text"> <div>{{ item.title }}</div><span>￥{{ item.price }}</span> </div> </div>
+      </section>
+      </div>
+       <div id="myorders">
+       <a href="./topicdetail">
+         <div v-for="item in orders" track-by="id" class="item twelve columns"> 
+         <div class="text"> 
+         {{ item.order_no }}
+         <br>
+         <span>{{ item.final_price }}</span>
+         </div>
+         </div>
+         </a>
+      </div>
+       <div id="myshopcart">
+         <section class="container content">
+         <span class="shopcartinfo-check"></span>
+         <div class="shopcartinfo twelve columns " onclick="window.location.href='/deliveredinfodetail.html'"> 
+         <span class="shopcartinfo-delicon"> X </span>
+         <img src="http://dev.d4me.com/uploads/product/image/23/Screen_Shot_2016-03-04_at_5.12.00_PM.png" class="shopcartinfo-img">
+         <div class="shopcartinfotext">XX  外套  颜色 尺码 </div>
+         <span class="shopcartinfo-add"> +  5</span>
+         <span class="shopcartinfo-subtract"> - </span>
+
+         <p class="shopcartinfoprice">￥ 5000</p>
+         </div>
+
+          <div class="shopcartinfo twelve columns " onclick="window.location.href='/deliveredinfodetail.html'"> 
+         <span class="shopcartinfo-delicon"> X </span>
+         <img src="http://dev.d4me.com//uploads/product/image/22/Screen_Shot_2016-03-04_at_5.02.39_PM.png" class="shopcartinfo-img">
+         <div class="shopcartinfotext">XX  外套  颜色 尺码 </div>
+         <span class="shopcartinfo-add"> +  5</span>
+         <span class="shopcartinfo-subtract"> - </span>
+
+         <p class="shopcartinfoprice">$ 5000</p>
+         </div>
+        
+      </section>
+      </div>
+      
+      <nav class="navigation main toolbar footer">
+      <a @click="home" class="four columns navigation-link">
+      <img src="/icon/homepage-icon.svg"></a>
+      <a @click="topic" class="four columns navigation-link">
+      <img src="/icon/article-icon.svg"></a>
+      <a @click="myprofile" class="four columns navigation-link" >
+      <img src="/icon/personal-icon.svg"></a>
+      </nav>
+    </div>
+
+
+   <!--sidemenu-->
+   <div id="sidemenu">
+       <nav class="navigation main toolbar header">
+        <section class="row">
+          <a class="three columns navigation-link" href="side-menu.html"><img src="/icon/menu-icon.svg"></a>
+          <a class="six   columns navigation-link" href="#show-menu"><img src="/icon/logo-d4me.svg"></a>
+          <a class="three columns navigation-link" href="search-bar.html"><img src="/icon/search-icon.svg"></a>
+        </section>
+      </nav>
+
+      <nav class="navigation side-menu">
+      <div class="thumb">
+        <img src="/img/cat-head.svg">
+      </div>
+      <div class="username">豹豹</div>
+      <ul>
+        <li> <a @click="profileinfo">个人信息</a></li>
+        <li onclick="window.location.href='/shoppingnotice.html'">购物说明</li>
+        <li onclick="window.location.href='/contactus.html'">联系我们</li>
+        <li onclick="window.location.href='/wx-login.html'">退出账户</li>
+      </ul>
+      </nav>
+
+      <section class="container content ">
+        <div v-for="item in products" track-by="id" class="item six columns "> <img src="/icon/like-full-icon.svg" class="like"> <img src={{item.image}} class="product"><img src="/icon/close-icon.svg" class="info"> 
+        <div class="text"> <div>{{ item.title }}</div><span>￥{{ item.price }}</span> </div> </div>
+      </section>
+
+      <section class="cart-icon"></section>
+
+     <nav class="navigation main toolbar footer">
+      <a @click="home" class="four columns navigation-link">
+      <img src="/icon/homepage-icon.svg"></a>
+      <a @click="topic" class="four columns navigation-link">
+      <img src="/icon/article-icon.svg"></a>
+      <a @click="myprofile" class="four columns navigation-link" >
+      <img src="/icon/personal-icon.svg"></a>
+      </nav>
+    </div>
+    
+
+    <!--sidemenu-->
+   <div id="profileinfo">
+       <nav class="navigation main toolbar header">
+        <section class="row">
+          <a class="three columns navigation-link" href="side-menu.html" onclick="window.history.go(-1);window.location.reload()">
+          <img src="/icon/arrow-icon.svg" ></a>
+          <a class="six columns navigation-link" href="#show-menu"> <h5 class="pagetitle">个人信息 </h5></a>
+          <a class="three columns navigation-link" href="#show-menu"></a>
+        </section>
+      </nav>
+
+    <section class="container content">
+     <div class="menutitlethumb">
+        <img src="/img/cat-head.svg"><p class="menud4me">昵称</p>
+      </div>
+      <div class="menunickname">豹豹</div>
+      <br>
+       <hr class="hrline"/>
+       <h6 class="menutitle"><img src="/icon/phone.svg" class="menuicon" >手机
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       <img src="/icon/arrow+2.svg" class="menuright" onclick="window.location.href='/phoneinfo.html'"></h6>
+       <hr class="hrline"/>
+      <h6 class="menutitle"><img src="/icon/inbox.svg" class="menuicon" >收货信息
+      <img src="/icon/arrow+2.svg" class="menuright" onclick="window.location.href='/deliveredinfo.html'"></h6>
+       <hr class="hrline"/>
+      </section>
+    </div>
+
+
+
+     <!--shopcart-->
+     <div id="shopcart">
+      <nav class="navigation main toolbar header">
+        <section class="row">
+          <a class="three columns navigation-link" href="side-menu.html" onclick="window.history.go(-1);window.location.reload()">
+          <img src="/icon/arrow-icon.svg" ></a>
+          <a class="six columns navigation-link" href="#show-menu"> <h5 class="pagetitle">购物车</h5></a>
+          <a class="three columns navigation-link" href="#show-menu"></a>
+        </section>
+      </nav>
+
+     <section class="container content">
+         <span class="shopcartinfo-check"></span>
+         <div class="shopcartinfo twelve columns " onclick="window.location.href='/deliveredinfodetail.html'"> 
+         <span class="shopcartinfo-delicon"> X </span>
+         <img src="http://dev.d4me.com/uploads/product/image/23/Screen_Shot_2016-03-04_at_5.12.00_PM.png" class="shopcartinfo-img">
+         <div class="shopcartinfotext">XX  外套  颜色 尺码 </div>
+         <span class="shopcartinfo-add"> +  5</span>
+         <span class="shopcartinfo-subtract"> - </span>
+
+         <p class="shopcartinfoprice">￥ 5000</p>
+         </div>
+
+          <div class="shopcartinfo twelve columns " onclick="window.location.href='/deliveredinfodetail.html'"> 
+         <span class="shopcartinfo-delicon"> X </span>
+         <img src="http://dev.d4me.com//uploads/product/image/22/Screen_Shot_2016-03-04_at_5.02.39_PM.png" class="shopcartinfo-img">
+         <div class="shopcartinfotext">XX  外套  颜色 尺码 </div>
+         <span class="shopcartinfo-add"> +  5</span>
+         <span class="shopcartinfo-subtract"> - </span>
+
+         <p class="shopcartinfoprice">$ 5000</p>
+         </div>
+        
+      </section>
+      <nav class="navigation main login toolbar footer">
+        <div class="row">
+          <a class="six columns navigation-link total-button" href="#">合计￥ 0.00</a>
+          <a class="six columns navigation-link login-button" href="submitorder.html">提交订单</a>
+        </div>
+      </nav>
+      </div>
+		</main>
+	<script src="js/fetch.js"></script>	
+	<script src="/build.js"></script>
+	</body>
+</html>
