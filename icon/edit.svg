@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="23px" height="25px" viewBox="0 0 23 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.6.1 (26313) - http://www.bohemiancoding.com/sketch -->
+    <title>edit icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="1" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.88627451   0 0 0 0 0.88627451   0 0 0 0 0.88627451  0 0 0 0.7 0" in="shadowBlurOuter1" type="matrix" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="标注" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="个人信息" transform="translate(-171.000000, -113.000000)">
+            <g id="edit-icon" transform="translate(175.000000, 113.000000)">
+                <rect id="Rectangle-408" stroke="#3E3A39" stroke-linecap="round" stroke-linejoin="round" filter="url(#filter-1)" x="0" y="5.84615385" width="12.9624277" height="12.2941176" rx="2"></rect>
+                <path d="M9.79549756,0.788081371 L12.3860803,1.79038313 L8.85022403,12.1171385 L6.25964131,11.1148368 L9.79549756,0.788081371 L9.79549756,0.788081371 Z M5.90486642,16.4351402 L8.61450028,12.8055889 L6.02391756,11.8032871 L5.90486642,16.4351402 L5.90486642,16.4351402 Z" id="Rectangle-407" fill="#3E3A39"></path>
+            </g>
+        </g>
+    </g>
+</svg>

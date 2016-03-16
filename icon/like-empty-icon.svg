@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="20px" height="18px" viewBox="0 0 20 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.4.4 (17249) - http://www.bohemiancoding.com/sketch -->
+    <title>Oval 27</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetInner1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetInner1" result="shadowBlurInner1"></feGaussianBlur>
+            <feComposite in="shadowBlurInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.4   0 0 0 0 0.4   0 0 0 0 0.4  0 0 0 0.35 0" in="shadowInnerInner1" type="matrix" result="shadowMatrixInner1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+                <feMergeNode in="shadowMatrixInner1"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="首页" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="menu" sketch:type="MSArtboardGroup" transform="translate(-330.000000, -348.000000)" filter="url(#filter-1)" fill="#E9E9E9">
+            <g id="图片" sketch:type="MSLayerGroup" transform="translate(15.000000, 67.000000)">
+                <g id="-black-sweater" transform="translate(180.000000, 270.000000)" sketch:type="MSShapeGroup">
+                    <path d="M137.414003,21.7152344 C135.95427,20.649997 135,18.8858479 135,16.889784 C135,13.6369461 137.534237,11 140.660377,11 C142.402983,11 143.961668,11.819375 145,13.1080588 C146.038332,11.819375 147.597017,11 149.339623,11 C152.465763,11 155,13.6369461 155,16.889784 C155,18.8858479 154.04573,20.649997 152.585997,21.7152344 L145,29 L137.414003,21.7152344 Z" id="Oval-27"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

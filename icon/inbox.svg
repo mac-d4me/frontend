@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="26px" height="19px" viewBox="0 0 26 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.6.1 (26313) - http://www.bohemiancoding.com/sketch -->
+    <title>inbox</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="标注" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="个人信息" transform="translate(-21.000000, -244.000000)">
+            <g id="inbox" transform="translate(37.500000, 258.500000) scale(-1, 1) translate(-37.500000, -258.500000) translate(22.000000, 245.000000)">
+                <path d="M30.1842105,6.33884167 L30.1842105,16.4612903 L23.6578947,16.4612903 L12.2368421,16.4612903 L12.2368421,0 L26.1052632,0 L26.1052632,0.00572764848 C28.4861879,0.130367517 30.3814352,2.27357477 30.3814352,4.89919355 C30.3814352,5.40019835 30.3124293,5.88363855 30.1842105,6.33884167 Z" id="Rectangle-636" stroke="#D7B87C" stroke-width="1.8" fill="#FFFFFF"></path>
+                <rect id="Rectangle-637" fill="#D7B87C" x="18.7631579" y="3.91935484" width="8.97368421" height="2.3516129" rx="1.8"></rect>
+                <path d="M16.3330633,4.89919355 C16.3330633,2.19344367 14.3203688,0 11.8375843,0 C9.35479978,0 7.34210526,2.19344367 7.34210526,4.89919355 L7.34210526,16.4612903 L16.3330633,16.4612903 L16.3330633,4.89919355 Z" id="Oval-636" stroke="#D7B87C" stroke-width="1.8" fill="#FFFFFF"></path>
+            </g>
+        </g>
+    </g>
+</svg>
