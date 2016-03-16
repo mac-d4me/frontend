@@ -11,7 +11,31 @@ var Vue = require('vue');
 	    case 'home':{
     	   //$("#home").hide();
     		 //$("#topic").show();
+        document.getElementById('login').style.display = "none";
         document.getElementById('home').style.display = "";
+        document.getElementById('productinfo').style.display = "none";
+        document.getElementById('remix').style.display = "none";
+        document.getElementById('topic').style.display = "none";
+        document.getElementById('topicinfo').style.display = "none";
+        document.getElementById('myprofile').style.display = "none";
+        document.getElementById('shopcart').style.display = "none";
+        document.getElementById('sidemenu').style.display = "none";
+        document.getElementById('profileinfo').style.display = "none";
+        document.getElementById('shoppingnotice').style.display = "none";
+        document.getElementById('contactus').style.display = "none";
+        document.getElementById('myfavor').style.display = "none";
+        document.getElementById('myorders').style.display = "none";
+        document.getElementById('payorder').style.display = "none";
+        document.getElementById('myshopcart').style.display = "none";
+        return false;
+	    }
+
+        case 'remix':{
+         //$("#home").hide();
+         //$("#topic").show();
+         document.getElementById('login').style.display = "none";
+        document.getElementById('home').style.display = "none";
+        document.getElementById('remix').style.display = "";
         document.getElementById('productinfo').style.display = "none";
         document.getElementById('topic').style.display = "none";
         document.getElementById('topicinfo').style.display = "none";
@@ -19,13 +43,42 @@ var Vue = require('vue');
         document.getElementById('shopcart').style.display = "none";
         document.getElementById('sidemenu').style.display = "none";
         document.getElementById('profileinfo').style.display = "none";
+        document.getElementById('shoppingnotice').style.display = "none";
+        document.getElementById('contactus').style.display = "none";
         document.getElementById('myfavor').style.display = "none";
         document.getElementById('myorders').style.display = "none";
+        document.getElementById('payorder').style.display = "none";
         document.getElementById('myshopcart').style.display = "none";
         return false;
-	    }
+      }
+
+       case 'productinfo':{
+         //$("#home").hide();
+         //$("#topic").show();
+         document.getElementById('login').style.display = "none";
+        document.getElementById('home').style.display = "none";
+        document.getElementById('remix').style.display = "none";
+        document.getElementById('productinfo').style.display = "";
+        document.getElementById('topic').style.display = "none";
+        document.getElementById('topicinfo').style.display = "none";
+        document.getElementById('myprofile').style.display = "none";
+        document.getElementById('shopcart').style.display = "none";
+        document.getElementById('sidemenu').style.display = "none";
+        document.getElementById('profileinfo').style.display = "none";
+        document.getElementById('shoppingnotice').style.display = "none";
+        document.getElementById('contactus').style.display = "none";
+        document.getElementById('myfavor').style.display = "none";
+        document.getElementById('myorders').style.display = "none";
+        document.getElementById('payorder').style.display = "none";
+        document.getElementById('myshopcart').style.display = "none";
+        return false;
+      }
+      
+
 	    case 'topic':{
+        document.getElementById('login').style.display = "none";
   	    document.getElementById('home').style.display = "none";
+        document.getElementById('remix').style.display = "none";
         document.getElementById('productinfo').style.display = "none";
         document.getElementById('topic').style.display = "";
         document.getElementById('topicinfo').style.display = "none";
@@ -33,13 +86,18 @@ var Vue = require('vue');
         document.getElementById('shopcart').style.display = "none";
         document.getElementById('sidemenu').style.display = "none";
         document.getElementById('profileinfo').style.display = "none";
+        document.getElementById('shoppingnotice').style.display = "none";
+        document.getElementById('contactus').style.display = "none";
         document.getElementById('myfavor').style.display = "none";
         document.getElementById('myorders').style.display = "none";
+        document.getElementById('payorder').style.display = "none";
         document.getElementById('myshopcart').style.display = "none";
          return false;
 	    }
        case 'topicinfo':{
+        document.getElementById('login').style.display = "none";
         document.getElementById('home').style.display = "none";
+        document.getElementById('remix').style.display = "none";
         document.getElementById('productinfo').style.display = "none";
         document.getElementById('topic').style.display = "none";
         document.getElementById('topicinfo').style.display = "";
@@ -47,13 +105,18 @@ var Vue = require('vue');
         document.getElementById('shopcart').style.display = "none";
         document.getElementById('sidemenu').style.display = "none";
         document.getElementById('profileinfo').style.display = "none";
+        document.getElementById('shoppingnotice').style.display = "none";
+        document.getElementById('contactus').style.display = "none";
         document.getElementById('myfavor').style.display = "none";
         document.getElementById('myorders').style.display = "none";
+        document.getElementById('payorder').style.display = "none";
         document.getElementById('myshopcart').style.display = "none";
          return false;
       }
 	    case 'myprofile':{
+        document.getElementById('login').style.display = "none";
 	      document.getElementById('home').style.display = "none";
+        document.getElementById('remix').style.display = "none";
         document.getElementById('productinfo').style.display = "none";
         document.getElementById('topic').style.display = "none";
         document.getElementById('topicinfo').style.display = "none";
@@ -61,13 +124,18 @@ var Vue = require('vue');
         document.getElementById('shopcart').style.display = "none";
         document.getElementById('sidemenu').style.display = "none";
         document.getElementById('profileinfo').style.display = "none";
+        document.getElementById('shoppingnotice').style.display = "none";
+        document.getElementById('contactus').style.display = "none";
         document.getElementById('myfavor').style.display = "none";
         document.getElementById('myorders').style.display = "none";
+        document.getElementById('payorder').style.display = "none";
         document.getElementById('myshopcart').style.display = "none";
          return false;
 	    }
       case 'shopcart':{
+        document.getElementById('login').style.display = "none";
         document.getElementById('home').style.display = "none";
+        document.getElementById('remix').style.display = "none";
         document.getElementById('productinfo').style.display = "none";
         document.getElementById('topic').style.display = "none";
         document.getElementById('topicinfo').style.display = "none";
@@ -75,13 +143,18 @@ var Vue = require('vue');
         document.getElementById('shopcart').style.display = "";
         document.getElementById('sidemenu').style.display = "none";
         document.getElementById('profileinfo').style.display = "none";
+        document.getElementById('shoppingnotice').style.display = "none";
+        document.getElementById('contactus').style.display = "none";
         document.getElementById('myfavor').style.display = "none";
         document.getElementById('myorders').style.display = "none";
+        document.getElementById('payorder').style.display = "none";
         document.getElementById('myshopcart').style.display = "none";
          return false;
       }
        case 'myorders':{
+        document.getElementById('login').style.display = "none";
         document.getElementById('home').style.display = "none";
+        document.getElementById('remix').style.display = "none";
         document.getElementById('productinfo').style.display = "none";
         document.getElementById('topic').style.display = "none";
         document.getElementById('topicinfo').style.display = "none";
@@ -89,13 +162,18 @@ var Vue = require('vue');
         document.getElementById('shopcart').style.display = "none";
         document.getElementById('sidemenu').style.display = "none";
         document.getElementById('profileinfo').style.display = "none";
+        document.getElementById('shoppingnotice').style.display = "none";
+        document.getElementById('contactus').style.display = "none";
         document.getElementById('myfavor').style.display = "none";
         document.getElementById('myorders').style.display = "";
+        document.getElementById('payorder').style.display = "none";
         document.getElementById('myshopcart').style.display = "none";
          return false;
       }
         case 'myshopcart':{
+        document.getElementById('login').style.display = "none";
         document.getElementById('home').style.display = "none";
+        document.getElementById('remix').style.display = "none";
         document.getElementById('productinfo').style.display = "none";
         document.getElementById('topic').style.display = "none";
         document.getElementById('topicinfo').style.display = "none";
@@ -103,13 +181,18 @@ var Vue = require('vue');
         document.getElementById('shopcart').style.display = "none";
         document.getElementById('sidemenu').style.display = "none";
         document.getElementById('profileinfo').style.display = "none";
+       document.getElementById('shoppingnotice').style.display = "none";
+        document.getElementById('contactus').style.display = "none";
         document.getElementById('myfavor').style.display = "none";
         document.getElementById('myorders').style.display = "none";
+        document.getElementById('payorder').style.display = "none";
         document.getElementById('myshopcart').style.display = "";
          return false;
       }
        case 'myfavor':{
+        document.getElementById('login').style.display = "none";
         document.getElementById('home').style.display = "none";
+        document.getElementById('remix').style.display = "none";
         document.getElementById('productinfo').style.display = "none";
         document.getElementById('topic').style.display = "none";
         document.getElementById('topicinfo').style.display = "none";
@@ -117,13 +200,18 @@ var Vue = require('vue');
         document.getElementById('shopcart').style.display = "none";
         document.getElementById('sidemenu').style.display = "none";
         document.getElementById('profileinfo').style.display = "none";
+        document.getElementById('shoppingnotice').style.display = "none";
+        document.getElementById('contactus').style.display = "none";
         document.getElementById('myfavor').style.display = "";
         document.getElementById('myorders').style.display = "none";
+        document.getElementById('payorder').style.display = "none";
         document.getElementById('myshopcart').style.display = "none";
          return false;
       }
       case 'sidemenu':{
+        document.getElementById('login').style.display = "none";
         document.getElementById('home').style.display = "none";
+        document.getElementById('remix').style.display = "none";
         document.getElementById('productinfo').style.display = "none";
         document.getElementById('topic').style.display = "none";
         document.getElementById('topicinfo').style.display = "none";
@@ -131,13 +219,38 @@ var Vue = require('vue');
         document.getElementById('shopcart').style.display = "none";
         document.getElementById('sidemenu').style.display = "";
         document.getElementById('profileinfo').style.display = "none";
+        document.getElementById('shoppingnotice').style.display = "none";
+        document.getElementById('contactus').style.display = "none";
         document.getElementById('myfavor').style.display = "none";
         document.getElementById('myorders').style.display = "none";
+        document.getElementById('payorder').style.display = "none";
+        document.getElementById('myshopcart').style.display = "none";
+         return false;
+      }
+        case 'searchbar':{
+        document.getElementById('login').style.display = "none";
+        document.getElementById('home').style.display = "none";
+        document.getElementById('remix').style.display = "none";
+        document.getElementById('productinfo').style.display = "none";
+        document.getElementById('topic').style.display = "none";
+        document.getElementById('topicinfo').style.display = "none";
+        document.getElementById('myprofile').style.display = "none";
+        document.getElementById('shopcart').style.display = "none";
+        document.getElementById('sidemenu').style.display = "";
+        document.getElementById('searchbar').style.display = "none";
+        document.getElementById('profileinfo').style.display = "none";
+        document.getElementById('shoppingnotice').style.display = "none";
+        document.getElementById('contactus').style.display = "none";
+        document.getElementById('myfavor').style.display = "none";
+        document.getElementById('myorders').style.display = "none";
+        document.getElementById('payorder').style.display = "none";
         document.getElementById('myshopcart').style.display = "none";
          return false;
       }
        case 'profileinfo':{
+        document.getElementById('login').style.display = "none";
         document.getElementById('home').style.display = "none";
+        document.getElementById('remix').style.display = "none";
         document.getElementById('productinfo').style.display = "none";
         document.getElementById('topic').style.display = "none";
         document.getElementById('topicinfo').style.display = "none";
@@ -145,8 +258,91 @@ var Vue = require('vue');
         document.getElementById('shopcart').style.display = "none";
         document.getElementById('sidemenu').style.display = "none";
         document.getElementById('profileinfo').style.display = "";
+        document.getElementById('shoppingnotice').style.display = "none";
+        document.getElementById('contactus').style.display = "none";
         document.getElementById('myfavor').style.display = "none";
         document.getElementById('myorders').style.display = "none";
+        document.getElementById('payorder').style.display = "none";
+        document.getElementById('myshopcart').style.display = "none";
+         return false;
+      }
+        case 'shoppingnotice':{
+        document.getElementById('login').style.display = "none";
+        document.getElementById('home').style.display = "none";
+        document.getElementById('remix').style.display = "none";
+        document.getElementById('productinfo').style.display = "none";
+        document.getElementById('topic').style.display = "none";
+        document.getElementById('topicinfo').style.display = "none";
+        document.getElementById('myprofile').style.display = "none";
+        document.getElementById('shopcart').style.display = "none";
+        document.getElementById('sidemenu').style.display = "none";
+        document.getElementById('profileinfo').style.display = "none";
+        document.getElementById('shoppingnotice').style.display = "none";
+        document.getElementById('contactus').style.display = "none";
+        document.getElementById('shoppingnotice').style.display = "";
+        document.getElementById('contactus').style.display = "none";
+        document.getElementById('myfavor').style.display = "none";
+        document.getElementById('myorders').style.display = "none";
+        document.getElementById('payorder').style.display = "none";
+        document.getElementById('myshopcart').style.display = "none";
+         return false;
+      }
+        case 'contactus':{
+        document.getElementById('login').style.display = "none";
+        document.getElementById('home').style.display = "none";
+        document.getElementById('remix').style.display = "none";
+        document.getElementById('productinfo').style.display = "none";
+        document.getElementById('topic').style.display = "none";
+        document.getElementById('topicinfo').style.display = "none";
+        document.getElementById('myprofile').style.display = "none";
+        document.getElementById('shopcart').style.display = "none";
+        document.getElementById('sidemenu').style.display = "none";
+        document.getElementById('profileinfo').style.display = "none";
+        document.getElementById('shoppingnotice').style.display = "none";
+        document.getElementById('contactus').style.display = "";
+        document.getElementById('myfavor').style.display = "none";
+        document.getElementById('myorders').style.display = "none";
+        document.getElementById('payorder').style.display = "none";
+        document.getElementById('myshopcart').style.display = "none";
+         return false;
+      }
+
+        case 'payorder':{
+        document.getElementById('login').style.display = "none";
+        document.getElementById('home').style.display = "none";
+        document.getElementById('remix').style.display = "none";
+        document.getElementById('productinfo').style.display = "none";
+        document.getElementById('topic').style.display = "none";
+        document.getElementById('topicinfo').style.display = "none";
+        document.getElementById('myprofile').style.display = "none";
+        document.getElementById('shopcart').style.display = "none";
+        document.getElementById('sidemenu').style.display = "none";
+        document.getElementById('profileinfo').style.display = "none";
+        document.getElementById('shoppingnotice').style.display = "none";
+        document.getElementById('contactus').style.display = "none";
+        document.getElementById('myfavor').style.display = "none";
+        document.getElementById('myorders').style.display = "none";
+        document.getElementById('payorder').style.display = "";
+        document.getElementById('myshopcart').style.display = "none";
+         return false;
+      }
+
+        case 'login':{
+        document.getElementById('login').style.display = "";
+        document.getElementById('home').style.display = "none";
+        document.getElementById('remix').style.display = "none";
+        document.getElementById('productinfo').style.display = "none";
+        document.getElementById('topic').style.display = "none";
+        document.getElementById('topicinfo').style.display = "none";
+        document.getElementById('myprofile').style.display = "none";
+        document.getElementById('shopcart').style.display = "none";
+        document.getElementById('sidemenu').style.display = "none";
+        document.getElementById('profileinfo').style.display = "none";
+        document.getElementById('shoppingnotice').style.display = "none";
+        document.getElementById('contactus').style.display = "none";
+        document.getElementById('myfavor').style.display = "none";
+        document.getElementById('myorders').style.display = "none";
+        document.getElementById('payorder').style.display = "none";
         document.getElementById('myshopcart').style.display = "none";
          return false;
       }
@@ -233,10 +429,36 @@ var Vue = require('vue');
   var app = new Vue({
     el: '#app',
     data: {
-            products: [] ,product: {},articles: [] ,user: {}, orders: [] 
+     auth_token: null,user: {}, products: [] , mixes: [] ,product: {},articles: [] ,user: {}, orders: [] ,order: {}
           },
     created: function()
      {
+
+      var auth_token = parseUrl(location.search).auth_token
+            if (auth_token) {
+              console.log(auth_token)
+              //console.log(this)
+              console.log('qq')
+              cookie.set('auth_token', auth_token)
+              this.auth_token = auth_token
+              fetch('http://dev.d4me.com/api/v1/users/4', {
+            credentials: 'same-origin',
+            })
+        .then(function(response) {
+              return response.json()
+            }).then(function(json) {
+              console.log(json)   
+              console.log(json.user)
+            self.$data.user = json.user
+              })
+
+            } else if (cookie.get('auth_token')) {
+              console.log('qqqq')
+              this.auth_token = cookie.get('auth_token')
+            }
+
+        
+
      var self = this
      fetch('http://dev.d4me.com/api/v1/products', {
           credentials: 'same-origin',
@@ -250,6 +472,49 @@ var Vue = require('vue');
           })
         },
          methods: {
+
+     /*   login: function(ev){
+           var auth_token = parseUrl(location.search).auth_token
+            if (auth_token) {
+              //console.log(auth_token)
+              //console.log(this)
+              //console.log('qq')
+              cookie.set('auth_token', auth_token)
+              this.auth_token = auth_token
+            } else if (cookie.get('auth_token')) {
+             // console.log('qqqq')
+              this.auth_token = cookie.get('auth_token')
+            }
+
+            fetch('http://dev.d4me.com/api/v1/users/2', {
+              credentials: 'same-origin',
+              })
+              .then(function(response) {
+                return response.json()
+              }).then(function(json) {
+              // console.log(json)
+                if (json.user) {
+                  app.user = json.user
+                } else
+
+
+                 {
+                  fetch('http://dev.d4me.com/api/v1/users/wx_login_url')
+                    .then(function(response) {
+                      return response.json()
+                      app.wx_login_url = json.url
+                      console.log(app)
+                      currentview('home');
+                      console.log('parsed json', json)
+                    }).then(function(json) {
+                      console.log(app)
+                      currentview('home');
+                      console.log('parsed json', json)
+                    })
+                }
+                console.log(app.user)
+              })
+        },*/
         home: function(ev){
           var self = this
         fetch('http://dev.d4me.com/api/v1/products', {
@@ -263,6 +528,35 @@ var Vue = require('vue');
             currentview('home');
               })
 
+        },
+      
+        productinfo: function(ev){
+          var self = this
+         fetch('http://dev.d4me.com/api/v1/products/1', {
+              credentials: 'same-origin',
+              })
+          .then(function(response) {
+                return response.json()
+              }).then(function(json) {
+               console.log(json)   
+               console.log(json.articles)   
+              self.$data.product = json.product
+              currentview('productinfo');
+              })
+        },
+         remix: function(ev){
+          var self = this
+         fetch('http://dev.d4me.com/api/v1/mixes.json?auth_token=12345', {
+              credentials: 'same-origin',
+              })
+          .then(function(response) {
+                return response.json()
+              }).then(function(json) {
+              console.log(json)   
+              console.log(json.mixes)   
+              self.$data.mixes = json.mixes
+              currentview('remix');
+              })
         },
         topic: function(ev){
           var self = this
@@ -304,6 +598,18 @@ var Vue = require('vue');
             currentview('myprofile');
               })
 
+        },
+        shoppingnotice: function(ev){
+
+            currentview('shoppingnotice');
+        },
+        contactus: function(ev){
+
+            currentview('contactus');
+        },
+        sidemenu: function(ev){
+
+            currentview('sidemenu');
         },
         profileinfo: function(ev){
 
@@ -379,6 +685,20 @@ var Vue = require('vue');
             currentview('myorders');
               })
         },
+          payorder: function(ev){
+          var self = this
+          fetch('http://dev.d4me.com/api/v1/orders/1.json?auth_token=12345', {
+            credentials: 'same-origin',
+            })
+        .then(function(response) {
+              return response.json()
+            }).then(function(json) {
+             console.log(json)   
+             console.log(json.order)
+            self.$data.order = json.order
+            currentview('payorder');
+              })
+        },
 
           shopcart: function(ev){
           var self = this
@@ -407,68 +727,12 @@ var Vue = require('vue');
             self.$data.user = json.user
             currentview('myshopcart');
               })
-        }
-      }
-  })
- 
-
-
-    var vapp = new Vue({
-    el: '#user',
-    data: {
-        message: 'Hello Vue.js!',
-        price: '123!',
-        wx_login_url: null,
-        auth_token: null,
-        user: {}
-      },
-      created: function (argument) {
-
-        var auth_token = parseUrl(location.search).auth_token
-        if (auth_token) {
-          //console.log(auth_token)
-          //console.log(this)
-          //console.log('qq')
-          cookie.set('auth_token', auth_token)
-          this.auth_token = auth_token
-        } else if (cookie.get('auth_token')) {
-         // console.log('qqqq')
-          this.auth_token = cookie.get('auth_token')
-        }
-
-        fetch('http://dev.d4me.com/api/v1/users/2', {
-          credentials: 'same-origin',
-          })
-          .then(function(response) {
-            return response.json()
-          }).then(function(json) {
-           // console.log(json)
-            if (json.user) {
-              vapp.user = json.user
-            } else {
-              fetch('/api/v1/users/wx_login_url')
-                .then(function(response) {
-                  return response.json()
-                }).then(function(json) {
-                  vapp.wx_login_url = json.url
-                  //console.log(vapp)
-                  //console.log('parsed json', json)
-                })
-            }
-            //console.log(vapp.user)
-          })
-
-      },
-      methods: {
-        onClick: function(ev){
-          console.log('clicked')
-          console.log($.router)
-
         },
-        logout: function(e) {
-          e.preventDefault()
+          logout: function(ev) {
+          currentview('login');
+         /* e.preventDefault()
           e.stopPropagation()
-          fetch('/api/v1/users/logout', {
+          fetch('http://dev.d4me.com/api/v1/users/logout', {
               credentials: 'same-origin',
               method: 'post',
               // headers: {
@@ -479,14 +743,57 @@ var Vue = require('vue');
             })
             .then(function(response) {
               return response.json()
+              console.log(response.json)
+              currentview('login');
             }).then(function(data) {
             }).catch(function(ex) {
-              //console.log('parsing failed', ex)
-            })
-        }
-      }
+              console.log('parsing failed', ex)
+            })*/
+        } //,
+         /*  login: function(ev) {
+            alert("123");
+            currentview('home');
+        /*   var auth_token = parseUrl(location.search).auth_token
+            if (auth_token) {
+              //console.log(auth_token)
+              //console.log(this)
+              //console.log('qq')
+              cookie.set('auth_token', auth_token)
+              this.auth_token = auth_token
+            } else if (cookie.get('auth_token')) {
+             // console.log('qqqq')
+              this.auth_token = cookie.get('auth_token')
+            }
 
-    })
+            fetch('http://dev.d4me.com/api/v1/users/2', {
+              credentials: 'same-origin',
+              })
+              .then(function(response) {
+                return response.json()
+              }).then(function(json) {
+               console.log(json)
+                if (json.user) {
+                  vapp.user = json.user
+                } else {
+                  fetch('/api/v1/users/wx_login_url')
+                    .then(function(response) {
+                      return response.json()
+                    }).then(function(json) {
+                      vapp.wx_login_url = json.url
+                      //console.log(vapp)
+                      currentview('home');
+                      console.log('parsed json', json)
+                    })
+                }
+                console.log(vapp.user)
+              })*/
+
+            //}
+      }
+  })
+ 
+
+
 
 
 
