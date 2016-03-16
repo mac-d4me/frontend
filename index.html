@@ -23,19 +23,19 @@
       <nav class="navigation main toolbar header">
 				<section class="row">
 				<a @click="sidemenu" class="three columns navigation-link">
-        <img src="/icon/menu-icon.svg"></a>
+        <img src="icon/menu-icon.svg"></a>
 				<a class="six   columns navigation-link" href="#show-menu">
-        <img src="/icon/logo-d4me.svg"></a>
+        <img src="icon/logo-d4me.svg"></a>
 				<a @click="searchbar" class="three columns navigation-link">
-        <img src="/icon/search-icon.svg"></a>
+        <img src="icon/search-icon.svg"></a>
 				</section>
 			</nav>
 
 			<section class="container content row" id="products">
 				<div v-for="item in products" track-by="id" class="item six columns " > 
-			        <img src="/icon/like-full-icon.svg" class="like">
+			        <img src="icon/like-full-icon.svg" class="like">
 			        <a href="./remix"><img src=http://dev.d4me.com{{item.image}} class="product"></a>
-			            <a href="./product"><img src="/icon/proinfo.svg" class="info"></a>
+			            <a href="./product"><img src="icon/proinfo.svg" class="info"></a>
 							<div class="text"> <div>{{ item.title }}</div><span>￥{{ item.price }}
 							</span> </div> </div>
 			
@@ -45,11 +45,11 @@
 
 			<nav class="navigation main toolbar footer">
 		  <a  @click="home" class="four columns navigation-link">
-      <img src="/icon/homepage-icon.svg"></a>
+      <img src="icon/homepage-icon.svg"></a>
       <a  @click="topic" class="four columns navigation-link">
-      <img src="/icon/article-icon.svg"></a>
+      <img src="icon/article-icon.svg"></a>
       <a @click="myprofile" class="four columns navigation-link" >
-      <img src="/icon/personal-icon.svg"></a>
+      <img src="icon/personal-icon.svg"></a>
 			</nav>
       </div>
 
@@ -58,18 +58,18 @@
      <nav class="navigation main toolbar header">
         <section class="row">
           <a class="three columns navigation-link" href="side-menu.html" onclick="window.history.go(-1);window.location.reload()">
-          <img src="/icon/arrow-icon.svg" ></a>
-          <a class="six columns navigation-link" href="#show-menu"><img src="/icon/logo-d4me.svg"></a>
-          <a class="three columns navigation-link" href="#show-menu"><img src="/icon/share.svg"></a>
+          <img src="icon/arrow-icon.svg" ></a>
+          <a class="six columns navigation-link" href="#show-menu"><img src="icon/logo-d4me.svg"></a>
+          <a class="three columns navigation-link" href="#show-menu"><img src="icon/share.svg"></a>
         </section>
       </nav>
 
         <section class="products">
          <div class="item twelve columns "> 
                <img src="http://dev.d4me.com/uploads/product/image/23/Screen_Shot_2016-03-04_at_5.12.00_PM.png" class="theme"> 
-               <img src="/icon/remix.svg" class="remix" onclick="window.location.href='/remix.html'">
+               <img src="icon/remix.svg" class="remix" onclick="window.location.href='/remix.html'">
                <div class="text"> 
-               {{ item.title }}<img src="/icon/like-full-icon.svg" class="like">
+               {{ item.title }}<img src="icon/like-full-icon.svg" class="like">
                <br>
               <span>￥{{ item.price }}</span> 
                </div>
@@ -86,13 +86,13 @@
            </div>
         </section>
        <section class="container content row" id="product" style="margin-top: -2%">
-        <div v-for="item in items" track-by="id" class="item six columns "> <img src="/icon/like-full-icon.svg" class="like"> <img src={{item.image}} class="product"><img src="/icon/close-icon.svg" class="info"> 
+        <div v-for="item in items" track-by="id" class="item six columns "> <img src="icon/like-full-icon.svg" class="like"> <img src={{item.image}} class="product"><img src="icon/close-icon.svg" class="info"> 
         <div class="text"> <div>{{ item.title }}</div><span>￥{{ item.price }}</span> </div> </div>
        </section>
       <a @click="shopcart"><section class="cart-icon"></section></a>
       <nav class="navigation main login toolbar footer">
         <div class="row">
-          <a class="four columns navigation-link wechat-button" href="shopcart.html"><img src="/icon/cart+add.svg"></a>
+          <a class="four columns navigation-link wechat-button" href="shopcart.html"><img src="icon/cart+add.svg"></a>
           <a class="eight columns navigation-link login-button" href="payorder.html">立即购买</a>
         </div>
       </nav>
@@ -104,11 +104,11 @@
      <nav class="navigation main toolbar header">
        <section class="row">
         <a @click="sidemenu" class="three columns navigation-link">
-        <img src="/icon/menu-icon.svg"></a>
+        <img src="icon/menu-icon.svg"></a>
         <a class="six   columns navigation-link" href="#show-menu">
-        <img src="/icon/logo-d4me.svg"></a>
+        <img src="icon/logo-d4me.svg"></a>
         <a @click="searchbar" class="three columns navigation-link">
-        <img src="/icon/search-icon.svg"></a>
+        <img src="icon/search-icon.svg"></a>
         </section>
       </nav>
 
@@ -117,7 +117,7 @@
          <div v-for="item in articles" track-by="id" class="item twelve columns">
          <img src=http://dev.d4me.com{{item.image}} class="theme"> 
          <div class="text"> 
-         {{ item.title }}<img src="/icon/like-full-icon.svg" class="like">
+         {{ item.title }}<img src="icon/like-full-icon.svg" class="like">
          <br>
          <span>{{ item.text }}</span>
          </div>
@@ -128,11 +128,11 @@
 
 	   <nav class="navigation main toolbar footer">
       <a  @click="home" class="four columns navigation-link">
-      <img src="/icon/homepage-icon.svg"></a>
+      <img src="icon/homepage-icon.svg"></a>
       <a  @click="topic" class="four columns navigation-link">
-      <img src="/icon/article-icon.svg"></a>
+      <img src="icon/article-icon.svg"></a>
       <a  @click="myprofile" class="four columns navigation-link" >
-      <img src="/icon/personal-icon.svg"></a>
+      <img src="icon/personal-icon.svg"></a>
       </nav>
    </div>
 
@@ -141,9 +141,9 @@
      <nav class="navigation main toolbar header">
         <section class="row">
           <a class="three columns navigation-link" href="side-menu.html" onclick="window.history.go(-1);window.location.reload()">
-          <img src="/icon/arrow-icon.svg" ></a>
-          <a class="six columns navigation-link" href="#show-menu"><img src="/icon/logo-d4me.svg"></a>
-          <a class="three columns navigation-link" href="#show-menu"><img src="/icon/share.svg"></a>
+          <img src="icon/arrow-icon.svg" ></a>
+          <a class="six columns navigation-link" href="#show-menu"><img src="icon/logo-d4me.svg"></a>
+          <a class="three columns navigation-link" href="#show-menu"><img src="icon/share.svg"></a>
         </section>
       </nav>
 
@@ -160,14 +160,14 @@
            </div>
         <hr class="hrline"/> 
         <div class="footer">
-        <div class="text">阅读量 {{ item.date }}<img src="/icon/like-full-icon.svg" class="like"></div>
+        <div class="text">阅读量 {{ item.date }}<img src="icon/like-full-icon.svg" class="like"></div>
        </div>
         <hr class="hrline"/>
        <div class="about">相关单品</div>
       </section>
 
       <section class="container content row" id="product" style="margin-top: -2%">
-        <div v-for="item in items" track-by="id" class="item six columns " onclick="window.location.href='/productinfo.html'"> <img src="/icon/like-full-icon.svg" class="like"> <img src={{item.image}} class="product"><img src="/icon/proinfo.svg" class="info"> 
+        <div v-for="item in items" track-by="id" class="item six columns " onclick="window.location.href='/productinfo.html'"> <img src="icon/like-full-icon.svg" class="like"> <img src={{item.image}} class="product"><img src="icon/proinfo.svg" class="info"> 
         <div class="text"> <div>{{ item.title }}</div><span>￥{{ item.price }}</span> </div> </div>
       </section>
    </div>
@@ -178,9 +178,9 @@
          <nav class="navigation main toolbar header">
         <section class="row">
         <a @click="sidemenu" class="three columns navigation-link">
-        <img src="/icon/menu-icon.svg"></a>
+        <img src="icon/menu-icon.svg"></a>
         <a class="six   columns navigation-link" href="#show-menu">
-        <img src="/icon/logo-d4me.svg"></a>
+        <img src="icon/logo-d4me.svg"></a>
         </section>
       </nav>
       <section class="container content">
@@ -191,7 +191,7 @@
       <p class="profiled4me2">DRESS FOR ME</p>
       <br>
       <div class="profilenickname">{{ item.username }}</div>
-      <img src="/icon/cashvoucher.svg" class="cashvouchericon">
+      <img src="icon/cashvoucher.svg" class="cashvouchericon">
       <p class="cashvouchernum">2</p>
       <br>
       <div class="cashvouchername" >代金券</div>
@@ -206,9 +206,9 @@
       <div id="myfavor">
       <section class="container content row">
         <div v-for="item in products" track-by="id" class="item six columns "> 
-        <img src="/icon/like-full-icon.svg" class="like">
+        <img src="icon/like-full-icon.svg" class="like">
         <a href="./remix"> <img src=http://dev.d4me.com{{item.image}} class="product"></a>
-        <a href="product"><img src="/icon/proinfo.svg" class="info"></a>
+        <a href="product"><img src="icon/proinfo.svg" class="info"></a>
         <div class="text"> <div>{{ item.title }}</div><span>￥{{ item.price }}</span> </div> </div>
       </section>
       </div>
@@ -248,11 +248,11 @@
       
       <nav class="navigation main toolbar footer">
       <a @click="home" class="four columns navigation-link">
-      <img src="/icon/homepage-icon.svg"></a>
+      <img src="icon/homepage-icon.svg"></a>
       <a @click="topic" class="four columns navigation-link">
-      <img src="/icon/article-icon.svg"></a>
+      <img src="icon/article-icon.svg"></a>
       <a @click="myprofile" class="four columns navigation-link" >
-      <img src="/icon/personal-icon.svg"></a>
+      <img src="icon/personal-icon.svg"></a>
       </nav>
     </div>
 
@@ -261,9 +261,9 @@
    <div id="sidemenu">
        <nav class="navigation main toolbar header">
         <section class="row">
-          <a class="three columns navigation-link" href="side-menu.html"><img src="/icon/menu-icon.svg"></a>
-          <a class="six   columns navigation-link" href="#show-menu"><img src="/icon/logo-d4me.svg"></a>
-          <a class="three columns navigation-link" href="search-bar.html"><img src="/icon/search-icon.svg"></a>
+          <a class="three columns navigation-link" href="side-menu.html"><img src="icon/menu-icon.svg"></a>
+          <a class="six   columns navigation-link" href="#show-menu"><img src="icon/logo-d4me.svg"></a>
+          <a class="three columns navigation-link" href="search-bar.html"><img src="icon/search-icon.svg"></a>
         </section>
       </nav>
 
@@ -281,7 +281,7 @@
       </nav>
 
       <section class="container content ">
-        <div v-for="item in products" track-by="id" class="item six columns "> <img src="/icon/like-full-icon.svg" class="like"> <img src={{item.image}} class="product"><img src="/icon/close-icon.svg" class="info"> 
+        <div v-for="item in products" track-by="id" class="item six columns "> <img src="icon/like-full-icon.svg" class="like"> <img src={{item.image}} class="product"><img src="icon/close-icon.svg" class="info"> 
         <div class="text"> <div>{{ item.title }}</div><span>￥{{ item.price }}</span> </div> </div>
       </section>
 
@@ -289,11 +289,11 @@
 
      <nav class="navigation main toolbar footer">
       <a @click="home" class="four columns navigation-link">
-      <img src="/icon/homepage-icon.svg"></a>
+      <img src="icon/homepage-icon.svg"></a>
       <a @click="topic" class="four columns navigation-link">
-      <img src="/icon/article-icon.svg"></a>
+      <img src="icon/article-icon.svg"></a>
       <a @click="myprofile" class="four columns navigation-link" >
-      <img src="/icon/personal-icon.svg"></a>
+      <img src="icon/personal-icon.svg"></a>
       </nav>
     </div>
     
@@ -303,7 +303,7 @@
        <nav class="navigation main toolbar header">
         <section class="row">
           <a class="three columns navigation-link" href="side-menu.html" onclick="window.history.go(-1);window.location.reload()">
-          <img src="/icon/arrow-icon.svg" ></a>
+          <img src="icon/arrow-icon.svg" ></a>
           <a class="six columns navigation-link" href="#show-menu"> <h5 class="pagetitle">个人信息 </h5></a>
           <a class="three columns navigation-link" href="#show-menu"></a>
         </section>
@@ -316,12 +316,12 @@
       <div class="menunickname">{{ item.username }}</div>
       <br>
        <hr class="hrline"/>
-       <h6 class="menutitle"><img src="/icon/phone.svg" class="menuicon" >手机
+       <h6 class="menutitle"><img src="icon/phone.svg" class="menuicon" >手机
        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-       <img src="/icon/arrow+2.svg" class="menuright" onclick="window.location.href='/phoneinfo.html'"></h6>
+       <img src="icon/arrow+2.svg" class="menuright" onclick="window.location.href='/phoneinfo.html'"></h6>
        <hr class="hrline"/>
-      <h6 class="menutitle"><img src="/icon/inbox.svg" class="menuicon" >收货信息
-      <img src="/icon/arrow+2.svg" class="menuright" onclick="window.location.href='/deliveredinfo.html'"></h6>
+      <h6 class="menutitle"><img src="icon/inbox.svg" class="menuicon" >收货信息
+      <img src="icon/arrow+2.svg" class="menuright" onclick="window.location.href='/deliveredinfo.html'"></h6>
        <hr class="hrline"/>
       </section>
     </div>
@@ -333,7 +333,7 @@
       <nav class="navigation main toolbar header">
         <section class="row">
           <a class="three columns navigation-link" href="side-menu.html" onclick="window.history.go(-1);window.location.reload()">
-          <img src="/icon/arrow-icon.svg" ></a>
+          <img src="icon/arrow-icon.svg" ></a>
           <a class="six columns navigation-link" href="#show-menu"> <h5 class="pagetitle">购物车</h5></a>
           <a class="three columns navigation-link" href="#show-menu"></a>
         </section>
