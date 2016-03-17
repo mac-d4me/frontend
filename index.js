@@ -728,6 +728,40 @@ var Vue = require('vue');
             currentview('myshopcart');
               })
         },
+          wx_pay: function(e) {
+          e.preventDefault()
+          e.stopPropagation()
+          fetch('/api/v1/orders/wx_pay', {
+              credentials: 'same-origin',
+              method: 'post',
+              headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+              },
+              body: JSON.stringify({
+                auth_token: app.auth_token
+              })
+            })
+            .then(function(response) {
+              return response.json()
+            }).then(function(charge) {
+              pingpp.createPayment(charge, function(result, error){
+                  if (result == "success") {
+                    console.log('success')
+                      window.location = "index.html"
+                      // 只有微信公众账号 wx_pub 支付成功的结果会在这里返回，其他的 wap 支付结果都是在 extra 中对应的 URL 跳转。
+                  } else if (result == "fail") {
+                      // charge 不正确或者微信公众账号支付失败时会在此处返回
+                      vapp.message = JSON.stringify(error)
+                  } else if (result == "cancel") {
+                      // 微信公众账号支付取消支付
+                      vapp.message = JSON.stringify(error)
+                  }
+              });
+            }).catch(function(ex) {
+              console.log('parsing failed', ex)
+            })
+        },
           logout: function(ev) {
           currentview('login');
          /* e.preventDefault()

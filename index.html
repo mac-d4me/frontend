@@ -57,7 +57,7 @@
       <div id="remix">
      <nav class="navigation main toolbar header">
         <section class="row">
-          <a class="three columns navigation-link" href="side-menu.html" @click="home">
+          <a class="three columns navigation-link" @click="home">
           <img src="/icon/arrow-icon.svg" ></a>
           <a class="six columns navigation-link" href="#show-menu"><img src="/icon/logo-d4me.svg"></a>
           <a class="three columns navigation-link" href="#show-menu"><img src="/icon/share.svg"></a>
@@ -82,7 +82,7 @@
       <div id="productinfo">
      <nav class="navigation main toolbar header">
         <section class="row">
-          <a class="three columns navigation-link" href="side-menu.html" @click="home">
+          <a class="three columns navigation-link"  @click="home">
           <img src="/icon/arrow-icon.svg" ></a>
           <a class="six columns navigation-link" href="#show-menu"><img src="/icon/logo-d4me.svg"></a>
           <a class="three columns navigation-link" href="#show-menu"><img src="/icon/share.svg"></a>
@@ -165,7 +165,7 @@
     <div id="topicinfo">
      <nav class="navigation main toolbar header">
         <section class="row">
-          <a class="three columns navigation-link" href="side-menu.html" >
+          <a @click="topic" class="three columns navigation-link" >
           <img src="/icon/arrow-icon.svg" ></a>
           <a class="six columns navigation-link" href="#show-menu"><img src="/icon/logo-d4me.svg"></a>
           <a class="three columns navigation-link" href="#show-menu"><img src="/icon/share.svg"></a>
@@ -329,7 +329,7 @@
    <div id="profileinfo">
        <nav class="navigation main toolbar header">
         <section class="row">
-          <a @click=sidemenu class="three columns navigation-link" href="side-menu.html">
+          <a @click=sidemenu class="three columns navigation-link" >
           <img src="/icon/arrow-icon.svg" ></a>
           <a class="six columns navigation-link" href="#show-menu"> <h5 class="pagetitle">个人信息 </h5></a>
           <a class="three columns navigation-link" href="#show-menu"></a>
@@ -345,10 +345,10 @@
        <hr class="hrline"/>
        <h6 class="menutitle"><img src="/icon/phone.svg" class="menuicon" >手机
        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-       <img src="/icon/arrow+2.svg" class="menuright" onclick="window.location.href='/phoneinfo.html'"></h6>
+       <a  @click=phoneinfo><img src="/icon/arrow+2.svg" class="menuright" ></a></h6>
        <hr class="hrline"/>
       <h6 class="menutitle"><img src="/icon/inbox.svg" class="menuicon" >收货信息
-      <img src="/icon/arrow+2.svg" class="menuright" onclick="window.location.href='/deliveredinfo.html'"></h6>
+       <a  @click=deliveredinfo><img src="/icon/arrow+2.svg" class="menuright" ></a></h6>
        <hr class="hrline"/>
       </section>
     </div>
@@ -411,7 +411,7 @@
      <div id="payorder">
        <nav class="navigation main toolbar header">
         <section class="row">
-          <a class="three columns navigation-link" href="side-menu.html" onclick="window.history.go(-1);window.location.reload()">
+          <a @click="myprofile" class="three columns navigation-link" >
           <img src="/icon/arrow-icon.svg" ></a>
            <a class="six columns navigation-link" href="#show-menu"> <h5 class="pagetitle">我的订单</h5></a>
            <a class="three columns navigation-link" href="#"><img src="/icon/delete.svg"></a>
@@ -420,13 +420,13 @@
        <section class="container content row" >
 
          <span class="shopcartinfo-check"></span>
-         <div class="shopcartinfo twelve columns " onclick="window.location.href='/deliveredinfodetail.html'"> 
+         <div class="shopcartinfo twelve columns " > 
          <img src="http://dev.d4me.com/uploads/product/image/23/Screen_Shot_2016-03-04_at_5.12.00_PM.png" class="shopcartinfo-img">
          <div class="shopcartinfotext">XX  外套  颜色 尺码 </div>
          <p class="shopcartinfoprice">￥ 5000</p>
          </div>
 
-          <div class="shopcartinfo twelve columns " onclick="window.location.href='/deliveredinfodetail.html'"> 
+          <div class="shopcartinfo twelve columns "> 
          <img src="http://dev.d4me.com//uploads/product/image/22/Screen_Shot_2016-03-04_at_5.02.39_PM.png" class="shopcartinfo-img">
          <div class="shopcartinfotext">XX  外套  颜色 尺码 </div>
          <p class="shopcartinfoprice">$ 5000</p>
@@ -442,7 +442,7 @@
 
      <nav class="navigation main login toolbar footer">
         <div class="row">
-          <a class="twelve columns navigation-link login-button" >去支付</a>
+          <a @click="wx_pay"  class="twelve columns navigation-link login-button" >去支付</a>
         </div>
       </nav>
       </div>
@@ -451,7 +451,7 @@
      <div id="shopcart">
       <nav class="navigation main toolbar header">
         <section class="row">
-          <a class="three columns navigation-link" href="side-menu.html" onclick="window.history.go(-1);window.location.reload()">
+          <a  @click="sidemenu" class="three columns navigation-link" href="side-menu.html">
           <img src="/icon/arrow-icon.svg" ></a>
           <a class="six columns navigation-link" href="#show-menu"> <h5 class="pagetitle">购物车</h5></a>
           <a class="three columns navigation-link" href="#show-menu"></a>
@@ -473,7 +473,7 @@
       <nav class="navigation main login toolbar footer">
         <div class="row">
           <a class="six columns navigation-link total-button" href="#">合计￥ 0.00</a>
-          <a class="six columns navigation-link login-button" href="submitorder.html">提交订单</a>
+          <a @click="submitorder" class="six columns navigation-link login-button" >提交订单</a>
         </div>
       </nav>
       </div>
