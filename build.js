@@ -22,6 +22,8 @@ var Vue = require('vue');
         document.getElementById('shopcart').style.display = "none";
         document.getElementById('sidemenu').style.display = "none";
         document.getElementById('profileinfo').style.display = "none";
+        document.getElementById('deliveredinfo').style.display = "none";
+        document.getElementById('deliveredinfodetail').style.display = "none";
         document.getElementById('shoppingnotice').style.display = "none";
         document.getElementById('contactus').style.display = "none";
         document.getElementById('myfavor').style.display = "none";
@@ -44,6 +46,8 @@ var Vue = require('vue');
         document.getElementById('shopcart').style.display = "none";
         document.getElementById('sidemenu').style.display = "none";
         document.getElementById('profileinfo').style.display = "none";
+         document.getElementById('deliveredinfo').style.display = "none";
+        document.getElementById('deliveredinfodetail').style.display = "none";
         document.getElementById('shoppingnotice').style.display = "none";
         document.getElementById('contactus').style.display = "none";
         document.getElementById('myfavor').style.display = "none";
@@ -66,6 +70,8 @@ var Vue = require('vue');
         document.getElementById('shopcart').style.display = "none";
         document.getElementById('sidemenu').style.display = "none";
         document.getElementById('profileinfo').style.display = "none";
+         document.getElementById('deliveredinfo').style.display = "none";
+        document.getElementById('deliveredinfodetail').style.display = "none";
         document.getElementById('shoppingnotice').style.display = "none";
         document.getElementById('contactus').style.display = "none";
         document.getElementById('myfavor').style.display = "none";
@@ -87,6 +93,8 @@ var Vue = require('vue');
         document.getElementById('shopcart').style.display = "none";
         document.getElementById('sidemenu').style.display = "none";
         document.getElementById('profileinfo').style.display = "none";
+         document.getElementById('deliveredinfo').style.display = "none";
+        document.getElementById('deliveredinfodetail').style.display = "none";
         document.getElementById('shoppingnotice').style.display = "none";
         document.getElementById('contactus').style.display = "none";
         document.getElementById('myfavor').style.display = "none";
@@ -106,6 +114,8 @@ var Vue = require('vue');
         document.getElementById('shopcart').style.display = "none";
         document.getElementById('sidemenu').style.display = "none";
         document.getElementById('profileinfo').style.display = "none";
+         document.getElementById('deliveredinfo').style.display = "none";
+        document.getElementById('deliveredinfodetail').style.display = "none";
         document.getElementById('shoppingnotice').style.display = "none";
         document.getElementById('contactus').style.display = "none";
         document.getElementById('myfavor').style.display = "none";
@@ -125,6 +135,8 @@ var Vue = require('vue');
         document.getElementById('shopcart').style.display = "none";
         document.getElementById('sidemenu').style.display = "none";
         document.getElementById('profileinfo').style.display = "none";
+         document.getElementById('deliveredinfo').style.display = "none";
+        document.getElementById('deliveredinfodetail').style.display = "none";
         document.getElementById('shoppingnotice').style.display = "none";
         document.getElementById('contactus').style.display = "none";
         document.getElementById('myfavor').style.display = "none";
@@ -144,6 +156,8 @@ var Vue = require('vue');
         document.getElementById('shopcart').style.display = "";
         document.getElementById('sidemenu').style.display = "none";
         document.getElementById('profileinfo').style.display = "none";
+         document.getElementById('deliveredinfo').style.display = "none";
+        document.getElementById('deliveredinfodetail').style.display = "none";
         document.getElementById('shoppingnotice').style.display = "none";
         document.getElementById('contactus').style.display = "none";
         document.getElementById('myfavor').style.display = "none";
@@ -163,6 +177,8 @@ var Vue = require('vue');
         document.getElementById('shopcart').style.display = "none";
         document.getElementById('sidemenu').style.display = "none";
         document.getElementById('profileinfo').style.display = "none";
+         document.getElementById('deliveredinfo').style.display = "none";
+        document.getElementById('deliveredinfodetail').style.display = "none";
         document.getElementById('shoppingnotice').style.display = "none";
         document.getElementById('contactus').style.display = "none";
         document.getElementById('myfavor').style.display = "none";
@@ -182,6 +198,8 @@ var Vue = require('vue');
         document.getElementById('shopcart').style.display = "none";
         document.getElementById('sidemenu').style.display = "none";
         document.getElementById('profileinfo').style.display = "none";
+         document.getElementById('deliveredinfo').style.display = "none";
+        document.getElementById('deliveredinfodetail').style.display = "none";
        document.getElementById('shoppingnotice').style.display = "none";
         document.getElementById('contactus').style.display = "none";
         document.getElementById('myfavor').style.display = "none";
@@ -201,6 +219,8 @@ var Vue = require('vue');
         document.getElementById('shopcart').style.display = "none";
         document.getElementById('sidemenu').style.display = "none";
         document.getElementById('profileinfo').style.display = "none";
+         document.getElementById('deliveredinfo').style.display = "none";
+        document.getElementById('deliveredinfodetail').style.display = "none";
         document.getElementById('shoppingnotice').style.display = "none";
         document.getElementById('contactus').style.display = "none";
         document.getElementById('myfavor').style.display = "";
@@ -220,6 +240,8 @@ var Vue = require('vue');
         document.getElementById('shopcart').style.display = "none";
         document.getElementById('sidemenu').style.display = "";
         document.getElementById('profileinfo').style.display = "none";
+         document.getElementById('deliveredinfo').style.display = "none";
+        document.getElementById('deliveredinfodetail').style.display = "none";
         document.getElementById('shoppingnotice').style.display = "none";
         document.getElementById('contactus').style.display = "none";
         document.getElementById('myfavor').style.display = "none";
@@ -240,6 +262,8 @@ var Vue = require('vue');
         document.getElementById('sidemenu').style.display = "";
         document.getElementById('searchbar').style.display = "none";
         document.getElementById('profileinfo').style.display = "none";
+         document.getElementById('deliveredinfo').style.display = "none";
+        document.getElementById('deliveredinfodetail').style.display = "none";
         document.getElementById('shoppingnotice').style.display = "none";
         document.getElementById('contactus').style.display = "none";
         document.getElementById('myfavor').style.display = "none";
@@ -259,6 +283,8 @@ var Vue = require('vue');
         document.getElementById('shopcart').style.display = "none";
         document.getElementById('sidemenu').style.display = "none";
         document.getElementById('profileinfo').style.display = "";
+         document.getElementById('deliveredinfo').style.display = "none";
+        document.getElementById('deliveredinfodetail').style.display = "none";
         document.getElementById('shoppingnotice').style.display = "none";
         document.getElementById('contactus').style.display = "none";
         document.getElementById('myfavor').style.display = "none";
@@ -267,6 +293,51 @@ var Vue = require('vue');
         document.getElementById('myshopcart').style.display = "none";
          return false;
       }
+
+        case 'deliveredinfo':{
+        document.getElementById('login').style.display = "none";
+        document.getElementById('home').style.display = "none";
+        document.getElementById('remix').style.display = "none";
+        document.getElementById('productinfo').style.display = "none";
+        document.getElementById('topic').style.display = "none";
+        document.getElementById('topicinfo').style.display = "none";
+        document.getElementById('myprofile').style.display = "none";
+        document.getElementById('shopcart').style.display = "none";
+        document.getElementById('sidemenu').style.display = "none";
+        document.getElementById('profileinfo').style.display = "none";
+        document.getElementById('deliveredinfo').style.display = "";
+        document.getElementById('deliveredinfodetail').style.display = "none";
+        document.getElementById('shoppingnotice').style.display = "none";
+        document.getElementById('contactus').style.display = "none";
+        document.getElementById('myfavor').style.display = "none";
+        document.getElementById('myorders').style.display = "none";
+        document.getElementById('payorder').style.display = "none";
+        document.getElementById('myshopcart').style.display = "none";
+         return false;
+      }
+
+          case 'deliveredinfodetail':{
+        document.getElementById('login').style.display = "none";
+        document.getElementById('home').style.display = "none";
+        document.getElementById('remix').style.display = "none";
+        document.getElementById('productinfo').style.display = "none";
+        document.getElementById('topic').style.display = "none";
+        document.getElementById('topicinfo').style.display = "none";
+        document.getElementById('myprofile').style.display = "none";
+        document.getElementById('shopcart').style.display = "none";
+        document.getElementById('sidemenu').style.display = "none";
+        document.getElementById('profileinfo').style.display = "none";
+        document.getElementById('deliveredinfo').style.display = "none";
+        document.getElementById('deliveredinfodetail').style.display = "";
+        document.getElementById('shoppingnotice').style.display = "none";
+        document.getElementById('contactus').style.display = "none";
+        document.getElementById('myfavor').style.display = "none";
+        document.getElementById('myorders').style.display = "none";
+        document.getElementById('payorder').style.display = "none";
+        document.getElementById('myshopcart').style.display = "none";
+         return false;
+      }
+
         case 'shoppingnotice':{
         document.getElementById('login').style.display = "none";
         document.getElementById('home').style.display = "none";
@@ -278,6 +349,8 @@ var Vue = require('vue');
         document.getElementById('shopcart').style.display = "none";
         document.getElementById('sidemenu').style.display = "none";
         document.getElementById('profileinfo').style.display = "none";
+         document.getElementById('deliveredinfo').style.display = "none";
+        document.getElementById('deliveredinfodetail').style.display = "none";
         document.getElementById('shoppingnotice').style.display = "none";
         document.getElementById('contactus').style.display = "none";
         document.getElementById('shoppingnotice').style.display = "";
@@ -299,6 +372,8 @@ var Vue = require('vue');
         document.getElementById('shopcart').style.display = "none";
         document.getElementById('sidemenu').style.display = "none";
         document.getElementById('profileinfo').style.display = "none";
+         document.getElementById('deliveredinfo').style.display = "none";
+        document.getElementById('deliveredinfodetail').style.display = "none";
         document.getElementById('shoppingnotice').style.display = "none";
         document.getElementById('contactus').style.display = "";
         document.getElementById('myfavor').style.display = "none";
@@ -319,6 +394,8 @@ var Vue = require('vue');
         document.getElementById('shopcart').style.display = "none";
         document.getElementById('sidemenu').style.display = "none";
         document.getElementById('profileinfo').style.display = "none";
+         document.getElementById('deliveredinfo').style.display = "none";
+        document.getElementById('deliveredinfodetail').style.display = "none";
         document.getElementById('shoppingnotice').style.display = "none";
         document.getElementById('contactus').style.display = "none";
         document.getElementById('myfavor').style.display = "none";
@@ -339,6 +416,8 @@ var Vue = require('vue');
         document.getElementById('shopcart').style.display = "none";
         document.getElementById('sidemenu').style.display = "none";
         document.getElementById('profileinfo').style.display = "none";
+         document.getElementById('deliveredinfo').style.display = "none";
+        document.getElementById('deliveredinfodetail').style.display = "none";
         document.getElementById('shoppingnotice').style.display = "none";
         document.getElementById('contactus').style.display = "none";
         document.getElementById('myfavor').style.display = "none";
@@ -430,7 +509,7 @@ var Vue = require('vue');
   var app = new Vue({
     el: '#app',
     data: {
-     auth_token: null,user: {}, products: [] , mixes: [] ,product: {},articles: [] ,user: {}, orders: [] ,order: {}
+     auth_token: null,user: {}, products: [] , mixes: [] ,product: {},articles: [] ,user: {}, addresses:[],orders: [] ,order: {} 
           },
     created: function()
      {
@@ -473,49 +552,6 @@ var Vue = require('vue');
           })
         },
          methods: {
-
-     /*   login: function(ev){
-           var auth_token = parseUrl(location.search).auth_token
-            if (auth_token) {
-              //console.log(auth_token)
-              //console.log(this)
-              //console.log('qq')
-              cookie.set('auth_token', auth_token)
-              this.auth_token = auth_token
-            } else if (cookie.get('auth_token')) {
-             // console.log('qqqq')
-              this.auth_token = cookie.get('auth_token')
-            }
-
-            fetch('http://dev.d4me.com/api/v1/users/2', {
-              credentials: 'same-origin',
-              })
-              .then(function(response) {
-                return response.json()
-              }).then(function(json) {
-              // console.log(json)
-                if (json.user) {
-                  app.user = json.user
-                } else
-
-
-                 {
-                  fetch('http://dev.d4me.com/api/v1/users/wx_login_url')
-                    .then(function(response) {
-                      return response.json()
-                      app.wx_login_url = json.url
-                      console.log(app)
-                      currentview('home');
-                      console.log('parsed json', json)
-                    }).then(function(json) {
-                      console.log(app)
-                      currentview('home');
-                      console.log('parsed json', json)
-                    })
-                }
-                console.log(app.user)
-              })
-        },*/
         home: function(ev){
           var self = this
         fetch('http://dev.d4me.com/api/v1/products', {
@@ -600,6 +636,43 @@ var Vue = require('vue');
               })
 
         },
+          deliveredinfo: function(ev){
+          var self = this
+          fetch('http://dev.d4me.com/api/v1/addresses.json?auth_token=12345', {
+            credentials: 'same-origin',
+            })
+        .then(function(response) {
+              return response.json()
+            }).then(function(json) {
+             console.log(json)   
+             console.log(json.addresses)
+            self.$data.addresses = json.addresses
+            currentview('deliveredinfo');
+              })
+
+        },
+     /*   deliveredinfoadd: function(ev){
+
+          fetch('http://dev.d4me.com/api/v1/addresses.json', {
+          method: 'post',
+          headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({
+            name: '5',
+            phone:'139169897771',
+            street:'sanghai changningqu yuan1',
+            city :'sanghai',
+            province :'shaghai',
+            country:'china',
+            default:'1',
+            auth_token:'12345'
+          }) 
+          currentview('deliveredinfo');
+        })
+        },
+*/
         shoppingnotice: function(ev){
 
             currentview('shoppingnotice');
@@ -647,7 +720,7 @@ var Vue = require('vue');
         },
 
          payorders: function(ev){
-          console.log("123");
+          
          fetch('http://dev.d4me.com/api/v1/orders/5/pay.json', {
           method: 'post',
           headers: {
@@ -660,7 +733,8 @@ var Vue = require('vue');
           }) 
         }).then(function(charge) {
               pingpp.createPayment(charge, function(result, error){
-                alert(result)
+                alert(result);
+                alert(charge);
                   if (result == "success") {
                     console.log('success')
                       window.location = "index.html"

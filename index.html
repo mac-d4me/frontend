@@ -355,6 +355,75 @@
     </div>
 
 
+    <!--deliveredinfo-->
+   <div id="deliveredinfo">
+      <nav class="navigation main toolbar header">
+        <section class="row">
+          <a class="three columns navigation-link" href="side-menu.html" onclick="window.history.go(-1);window.location.reload()">
+          <img src="/icon/arrow-icon.svg" ></a>
+          <a class="six columns navigation-link" href="#show-menu"> <h5 class="pagetitle">收货信息</h5></a>
+          <a class="three columns navigation-link" href="#show-menu"></a>
+        </section>
+      </nav>
+       
+        <section class="container content">
+        <div class="deliveredinfobtn twelve columns "> 
+         <a @click=deliveredinfoadd><div class="deliveredinfobtntext">+ &nbsp;&nbsp;添加</div></a>
+         </div>
+         <br>
+         &nbsp;
+         <br>
+         &nbsp;
+         <h6 class="delivereddefault">默认地址</h6>
+         <div v-for="item in addresses" track-by="id"  class="deliveredinfo twelve columns "> 
+         <div class="deliveredinfotext">{{ item.name }} {{ item.phone }}</div>
+         <img src="/icon/edit.svg" class="deliveredinfo-editicon">
+         <img src="/icon/delete.svg" class="deliveredinfo-delicon">
+         <p class="deliveredinfoaddress">{{ item.country }}{{ item.province }}{{ item.city }}{{ item.street }}</p>
+         </div>
+         
+      </section>
+    </div>
+
+     <!--deliveredinfodetail-->
+   <div id="deliveredinfodetail">
+      <nav class="navigation main toolbar header">
+        <section class="row">
+          <a @click=deliveredinfo class="three columns navigation-link">
+          <img src="/icon/arrow-icon.svg" ></a>
+          <a class="six columns navigation-link" href="#show-menu"> <h5 class="pagetitle">收货地址 </h5></a>
+          <a class="three columns navigation-link" href="#show-menu"></a>
+        </section>
+      </nav>
+
+    <section class="container content">
+   <div class="delivered-detailtitle">
+    <h6>收件人 
+    <br>
+    <span class="delivered-detailinput">13916989623</span></h6>
+    <hr class="hrline"/>
+    <br>
+    <h6>收件人手机
+    <br>
+    <span class="delivered-detailinput">13916333333</span></h6>
+    <hr class="hrline"/>
+    <br>
+    <h6>收件人地址
+     <br>
+     <span class="delivered-detailinput">222</span>
+     <br>
+    <span class="delivered-detailinput">3123sfddddddddd</span></h6>
+    </div>
+     </section>
+    <nav class="navigation main login toolbar footer">
+        <div class="row">
+          <a @click=deliveredinfodetail class="twelve columns navigation-link login-button" >确认修改</a>
+        </div>
+      </nav>
+    </div>
+
+
+
      <!--shoppingnotice-->
    <div id="shoppingnotice">
       <nav class="navigation main toolbar header">
