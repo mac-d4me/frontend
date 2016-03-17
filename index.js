@@ -629,6 +629,7 @@ var Vue = require('vue');
             currentview('myfavor');
               })
         },
+
           myorders: function(ev){
           var self = this
           fetch('http://dev.d4me.com/api/v1/orders.json?auth_token=12345', {
@@ -643,6 +644,54 @@ var Vue = require('vue');
             currentview('myorders');
               })
         },
+
+         payorders: function(ev){
+          console.log("123");
+         fetch('http://dev.d4me.com/api/v1/orders/5/pay.json', {
+          method: 'post',
+          headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({
+            id: '5',
+            auth_token:'12345'
+          }) 
+        }).then(function(charge) {
+              pingpp.createPayment(charge, function(result, error){
+                  if (result == "success") {
+                    console.log('success')
+                      window.location = "index.html"
+                      // 只有微信公众账号 wx_pub 支付成功的结果会在这里返回，其他的 wap 支付结果都是在 extra 中对应的 URL 跳转。
+                  } else if (result == "fail") {
+                      // charge 不正确或者微信公众账号支付失败时会在此处返回
+                      app.message = JSON.stringify(error)
+                  } else if (result == "cancel") {
+                      // 微信公众账号支付取消支付
+                      app.message = JSON.stringify(error)
+                  }
+              });
+            })
+        },
+        
+        createorders: function(ev){
+          console.log("123");
+         fetch('http://dev.d4me.com/api/v1/orders.json', {
+          method: 'post',
+          headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({
+            items: [{product_id:5,quantity:1},{product_id:3,quantity:2}],
+            address_id: '1',
+            auth_token:'12345'
+          })
+        })
+        },
+
+
+
           Payment: function(ev){
           var self = this
           fetch('http://dev.d4me.com/api/v1/orders.json?auth_token=12345&status=new', {
