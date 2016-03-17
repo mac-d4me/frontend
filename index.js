@@ -733,7 +733,7 @@ var Vue = require('vue');
         }).then(function(charge) {
               pingpp.createPayment(charge, function(result, error){
                 alert(result);
-                alert(charge);
+                alert(JSON.stringify(charge));
                   if (result == "success") {
                     console.log('success')
                       window.location = "index.html"
