@@ -731,10 +731,40 @@ var Vue = require('vue');
             auth_token:'12345'
           }) 
         }).then(function(charge) {
-             alert(JSON.stringify(charge));
+             
+             charge='{
+              "id": "ch_fP8mf9LuD4W18eLmv1PqHOKK",
+              "object": "charge",
+              "created": 1458210378,
+              "livemode": false,
+              "paid": false,
+              "refunded": false,
+              "app": "app_y54OuTzfbXzD5O0K",
+              "channel": "wx_pub",
+              "order_no": "20160317000005",
+              "client_ip": "180.154.107.14",
+              "amount": 320000,
+              "amount_settle": 320000,
+              "currency": "cny",
+              "subject": "product",
+              "body": "product",
+              "extra": {"open_id":"oi5LxslPsA1q1LAvYFvqX8d78ttw"},
+              "time_paid": null,
+              "time_expire": 1458217578,
+              "time_settle": null,
+              "transaction_no": null,
+              "refunds": {"object":"list","url":"/v1/charges/ch_fP8mf9LuD4W18eLmv1PqHOKK/refunds","has_more":false,"data":[]},
+              "amount_refunded": 0,
+              "failure_code": null,
+              "failure_msg": null,
+              "metadata": {},
+              "credential": {"object":"credential","wx_pub":{"appId":"wxcivla988ixh4jpcw","timeStamp":1458210378,"nonceStr":"f8bf7b81741876698467b965784ac191","package":"prepay_id=11010000001603170qfnr1kgggq5rfhw","signType":"MD5","paySign":"6C60AFCB32B130EDA65D5ABEAD913E2E"}},
+              "description": null
+            }'
               pingpp.createPayment(charge, function(result, error){
+                alert(JSON.stringify(charge));
                 alert(result);
-                 alert(error);
+                 alert(JSON.stringify(error);
                   if (result == "success") {
                     console.log('success')
                       window.location = "index.html"
