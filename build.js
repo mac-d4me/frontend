@@ -660,6 +660,7 @@ var Vue = require('vue');
           }) 
         }).then(function(charge) {
               pingpp.createPayment(charge, function(result, error){
+                alert(result)
                   if (result == "success") {
                     console.log('success')
                       window.location = "index.html"
