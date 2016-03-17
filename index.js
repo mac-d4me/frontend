@@ -733,7 +733,7 @@ var Vue = require('vue');
         }).then(function(response) {
               return response.json()
             }).then(function(charge) {
-             window.charge=charge;
+           /*  window.charge=charge;
              charge={
               "id": "ch_fP8mf9LuD4W18eLmv1PqHOKK",
               "object": "charge",
@@ -762,7 +762,7 @@ var Vue = require('vue');
               "metadata": {},
               "credential": {"object":"credential","wx_pub":{"appId":"wxcivla988ixh4jpcw","timeStamp":1458210378,"nonceStr":"f8bf7b81741876698467b965784ac191","package":"prepay_id=11010000001603170qfnr1kgggq5rfhw","signType":"MD5","paySign":"6C60AFCB32B130EDA65D5ABEAD913E2E"}},
               "description": null
-                }
+                }*/
               pingpp.createPayment(charge, function(result, error){
                 alert(JSON.stringify(charge));
                 alert(result);
