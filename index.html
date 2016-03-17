@@ -359,7 +359,7 @@
    <div id="deliveredinfo">
       <nav class="navigation main toolbar header">
         <section class="row">
-          <a class="three columns navigation-link" href="side-menu.html" onclick="window.history.go(-1);window.location.reload()">
+          <a @click=sidemenu  class="three columns navigation-link">
           <img src="/icon/arrow-icon.svg" ></a>
           <a class="six columns navigation-link" href="#show-menu"> <h5 class="pagetitle">收货信息</h5></a>
           <a class="three columns navigation-link" href="#show-menu"></a>
@@ -368,7 +368,7 @@
        
         <section class="container content">
         <div class="deliveredinfobtn twelve columns "> 
-         <a @click=deliveredinfoadd><div class="deliveredinfobtntext">+ &nbsp;&nbsp;添加</div></a>
+         <a @click=deliveredinfodetail><div class="deliveredinfobtntext">+ &nbsp;&nbsp;添加</div></a>
          </div>
          <br>
          &nbsp;
@@ -417,7 +417,7 @@
      </section>
     <nav class="navigation main login toolbar footer">
         <div class="row">
-          <a @click=deliveredinfodetail class="twelve columns navigation-link login-button" >确认修改</a>
+          <a @click=deliveredinfoadd class="twelve columns navigation-link login-button" >确认修改</a>
         </div>
       </nav>
     </div>
