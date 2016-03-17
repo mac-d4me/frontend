@@ -730,8 +730,10 @@ var Vue = require('vue');
             id: '5',
             auth_token:'12345'
           }) 
-        }).then(function(charge) {
-             
+        }).then(function(response) {
+              return response.json()
+            }).then(function(charge) {
+             window.charge=charge;
              charge={
               "id": "ch_fP8mf9LuD4W18eLmv1PqHOKK",
               "object": "charge",
