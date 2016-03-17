@@ -732,9 +732,10 @@ var Vue = require('vue');
             auth_token:'12345'
           }) 
         }).then(function(charge) {
+             alert(JSON.stringify(charge));
               pingpp.createPayment(charge, function(result, error){
                 alert(result);
-                alert(JSON.stringify(charge));
+                 alert(error);
                   if (result == "success") {
                     console.log('success')
                       window.location = "index.html"
