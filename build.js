@@ -758,7 +758,6 @@ var Vue = require('vue');
         },
         
         createorders: function(ev){
-          console.log("123");
          fetch('http://dev.d4me.com/api/v1/orders.json', {
           method: 'post',
           headers: {
@@ -772,7 +771,6 @@ var Vue = require('vue');
           })
         })
         },
-
 
 
           Payment: function(ev){
